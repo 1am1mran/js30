@@ -1,0 +1,35 @@
+:root {
+    --base: rgb(40,177,223);
+    --spacing: 10px;
+    --blur: 1px;
+  }
+  img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+  }
+  .h1 {
+    color: var(--base);
+  }
+  .background{
+    background-image: url("http://eskipaper.com/images/polygons-3.jpg");
+  }
+  body {
+    text-align: center;
+    background: green;
+    color: white;
+    font-family: "helvetica neue";
+    font-size: 15px;
+    font-weight: 100;
+  }
+  .controls {
+    margin-bottom: 50px;
+  }
+  a {
+    color: var(--base);
+    text-decoration: none;
+  }
+  input {
+    width: 100px;
+  }
+  

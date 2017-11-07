@@ -1,0 +1,74 @@
+@import "https://fonts.googleapis.com/css?family=Black+Ops+One|Luckiest+Guy|Sonsie+One|Shojumaru&effect=3d|3d-float|anaglyph|brick-sign|canvas-print|crackle|decaying|destruction|distressed|distressed-wood|emboss|fire|fire-animation|fragile|grass|ice|mitosis|neon|outline|putting-green|scuffed-steel|shadow-multiple|splintered|static|stonewash|vintage|wallpaper";
+html {
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #3bc1ac;
+    background-image: url("https://source.unsplash.com/random");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.voiceinator {
+    padding: 2rem;
+    width: 50rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    position: relative;
+    background: #25ACE5;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Sonsie One";
+    color: #5F0080;
+    text-align: center;
+}
+
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 0;
+    font-size: 2rem;
+    color: #515C52;
+    background: #00C59C;
+    outline: 0;
+}
+
+textarea {
+    background: #000;
+    height: 20rem;
+}
+
+.voiceinator button {
+    background: #ffc600;
+    border: 0;
+    width: 49%;
+    float: left;
+    font-family: "Pacifico", cursive;
+    margin-bottom: 0;
+    font-size: 2rem;
+    border-bottom: 5px solid #f3c010;
+    cursor: pointer;
+    position: relative;
+}
+
+.voiceinator button:active {
+    top: 2px;
+}
+
+.voiceinator button:nth-of-type(1) {
+    margin-right: 2%;
+}

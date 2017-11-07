@@ -1,0 +1,42 @@
+@import "https://fonts.googleapis.com/css?family=Black+Ops+One|Luckiest+Guy|Sonsie+One|Shojumaru&effect=3d|3d-float|anaglyph|brick-sign|canvas-print|crackle|decaying|destruction|distressed|distressed-wood|emboss|fire|fire-animation|fragile|grass|ice|mitosis|neon|outline|putting-green|scuffed-steel|shadow-multiple|splintered|static|stonewash|vintage|wallpaper";
+html {
+    font-size: 10px;
+}
+
+body {
+    background: rgb(39,174,97);
+    font-family:"Luckiest Guy";
+    font-weight: 200;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+}
+
+.words {
+    max-width: 500px;
+    margin: 50px auto;
+    color: rgb(39,174,97);
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem 1rem 5rem;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(52,73,94)), color-stop(10%, rgb(255,240,170))) 0 4px;
+    background-size: 100% 3rem;
+    position: relative;
+    line-height: 3rem;
+}
+
+p {
+    margin: 0 0 3rem;
+}
+
+.words:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    border: 1px solid;
+    border-color: transparent #efe4e4;
+}

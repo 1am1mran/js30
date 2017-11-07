@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+    background: url("http://wes.io/hx9M/oh-la-la.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    padding: 20px;
+    max-width: 350px;
+    background: rgba(134, 25, 201, 0.6);
+    box-shadow: 0 0 20px 10px rgba(6, 7, 159, 0.6);
+}
+
+h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 200;
+}
+
+.plates {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.plates li {
+    border-bottom: 1px solid rgba(189, 5, 5, 0.5);
+    padding: 10px 0;
+    font-weight: 100;
+    display: flex;
+}
+
+.plates label {
+    flex: 1;
+    cursor: pointer;
+}
+
+.plates input {
+    display: none;
+}
+
+.plates input+label:before {
+    content: "⬜";
+    margin-right: 10px;
+}
+
+.plates input:checked+label:before {
+    content: "🍚";
+}
+
+.add-items {
+    margin-top: 20px;
+}
+
+.add-items input {
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}

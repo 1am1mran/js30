@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+    background: red;
+    font-family: "Sonsie One";
+    font-size: 20px;
+    font-weight: 200;
+  }
+  body {
+    margin: 0;
+  }
+  .panels {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+  }
+  .panel {
+    background: yellow;
+    box-shadow: inset 0 0 0 8px #00bcd6;
+    color: green;
+    text-align: center;
+    align-items: center;
+    transition: font-size 0.9s cubic-bezier(0.58, 1.65, 1, -0.57),
+      flex 0.9s cubic-bezier(0.58, 1.65, 1, -0.57),
+      background 0.2s;
+  font-size: 15px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .panel1{
+    background-image: url("https://source.unsplash.com/random/400x400");
+  }
+  .panel2{
+    background-image: url("https://source.unsplash.com/random/400x400");
+  }
+  .panel3{
+    background-image: url("https://source.unsplash.com/random/400x400");
+  }
+  .panel4{
+    background-image: url("https://source.unsplash.com/random/400x400");
+  }
+  .panel5{
+    background-image: url("https://source.unsplash.com/random/400x400");
+  }
+    .panel > * {
+        margin:0;
+        width: 100px;
+        transition:transform 0.5s;
+        flex: 1 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .panel > *:first-child { transform: translateY(-100%) }
+      .panel.open-active > *:first-child { transform: translateY(0) }
+      .panel > *:last-child { transform: translateY(100%) }
+      .panel.open-active > *:last-child { transform: translateY(0) }
+      .panel p {
+        text-transform: lowercase;
+        font-family: 'Sonsie One', cursive;
+        text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+        font-size: 2em;
+      }
+      .panel p:nth-child(2) {
+        font-size: 4em;
+      }
+      .panel.open {
+        flex: 2;
+        font-size:20px;
+      }
+      .cta {
+        color:white;
+        text-decoration: none;
+      }

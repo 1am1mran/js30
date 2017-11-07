@@ -1,0 +1,14 @@
+html {
+    background-color: #000;
+    background-image: url("https://rlv.zcache.com/belt_buckle_imran-r075d3f2c324943ffa25f301eb2f7ffc0_fel7u_8byvr_324.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 45em;
+}
+h1{
+    background: darkgray;
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif, monospace;
+}
+span{
+    color: green;
+}
