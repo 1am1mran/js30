@@ -44,12 +44,17 @@ h1 {
 	display: inline-block;
 	margin:5px;
     font-weight: bold;
-    background-color: #ffcc5c;
+    background-color: #333333;
     /* text-shadow: -1px -1px black, 1px 1px white; */
-    color: #3399ff;
+    color: #bf9b30;
 	border-radius: 7px;
     box-shadow: 0 .2em gray; 
     cursor: pointer;
+}
+.difficulty{
+    font-size: 30px;
+    color: #111111;
+    background: #555555;
 }
 
 .hole {

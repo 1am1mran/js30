@@ -11,27 +11,59 @@ function randomHole(holes) {
     const idx = Math.floor(Math.random() * holes.length);
     const hole = holes[idx];
     if (hole === lastHole) {
-        console.log('Ah nah thats the same one bud');
+        console.log('Oh! thats the same one');
         return randomHole(holes);
     }
     lastHole = hole;
     return hole;
 }
-function peep() {
-    const time = randomTime(200, 1000);
+function hard() {
+    const time = randomTime(150, 300);  //Hard Game
     const hole = randomHole(holes);
     hole.classList.add('up');
     setTimeout(() => {
         hole.classList.remove('up');
-        if (!timeUp) peep();
+        if (!timeUp) hard();
     }, time);
 }
+
+function medium() {
+    const time = randomTime(200, 500);  //Medium Game
+    const hole = randomHole(holes);
+    hole.classList.add('up');
+    setTimeout(() => {
+        hole.classList.remove('up');
+        if (!timeUp) medium();
+    }, time);
+}
+
+function easy() {
+    const time = randomTime(400, 1000);  //Easy Game
+    const hole = randomHole(holes);
+    hole.classList.add('up');
+    setTimeout(() => {
+        hole.classList.remove('up');
+        if (!timeUp) easy();
+    }, time);
+}
+
 function startGame() {
     scoreBoard.textContent = 0;
     timeUp = false;
     score = 0;
-    peep();
-    setTimeout(() => timeUp = true, 10000)
+    if (randomTime < 300 && randomTime > 150) {
+        hard();
+        // setTimeout(() => timeUp = true, 3000)
+    }
+    else if (randomTime < 500 && randomTime > 200) {
+        medium();
+        // setTimeout(() => timeUp = true, 3000)
+    }
+    else if (randomTime < 400 && randomTime > 1000) {
+        hard();
+        // setTimeout(() => timeUp = true, 3000)
+    }
+    setTimeout(() => timeUp = true, 3000)
 }
 function bonk(e) {
     if (!e.isTrusted) return; // cheater!
